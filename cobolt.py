@@ -27,7 +27,7 @@ if __name__ == "__main__":
   result ="y"
   for idx in range(1,25):
     print "idx %d" % idx
-    for code in range(48,127):
+    for code in range(46,127): # 46 == '.' in ascii
       if doAssert(conn, (result, code)):
         result += (chr(code))
         print result.lower()
